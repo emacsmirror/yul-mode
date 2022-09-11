@@ -1,4 +1,4 @@
-;;; yul-mode.el --- Major mode for editing Ethereum Yul intermediate code.
+;;; yul-mode.el --- Major mode for editing Ethereum Yul intermediate code
 
 ;; Copyright © 2022, by Ta Quang Trung
 
@@ -121,7 +121,7 @@ Highlight the 1st result."
 ;;;###autoload
 (define-derived-mode yul-mode prog-mode
   "yul-mode"
-  "Major mode for editing Ethereum Yul intermediate code"
+  "Major mode for editing Ethereum Yul intermediate code."
   :syntax-table yul-syntax-table
 
   ;; Syntax highlighting
