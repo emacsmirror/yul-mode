@@ -88,7 +88,7 @@
 Highlight the 1st result."
   (yul--match-regexp
    (concat
-    " *\\([a-zA-Z0-9_]+\\) *\(")
+    " *\\([a-zA-Z0-9_$]+\\) *\(")
    limit))
 
 (defconst yul-font-lock-keywords
