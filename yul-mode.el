@@ -138,13 +138,11 @@ Highlight the 1st result."
   (set (make-local-variable 'comment-use-syntax) t)
 
   ;; Configure imenu
-  (set (make-local-variable 'imenu-create-index-function) 'yul--imenu-create-index)
+  (set (make-local-variable 'imenu-create-index-function)
+       'yul--imenu-create-index))
 
-  (run-hooks 'yul-hook))
-
-;; Binding with *.yul files
-(or (assoc "\\.yul$" auto-mode-alist)
-    (add-to-list 'auto-mode-alist '("\\.yul\\'" . yul-mode)))
+;;;###autoload
+(add-to-list 'auto-mode-alist '("\\.yul\\'" . yul-mode))
 
 ;; Finally export the `yul-mode'
 (provide 'yul-mode)
