@@ -23,7 +23,8 @@
 
 ;;; Commentary:
 
-;; Emacs major mode for editing Ethereum Yul intermediate code.
+;; Emacs major mode for editing Yul intermediate code of Ethereum's Solidity
+;; smart contracts.
 
 ;; Features:
 ;; - Syntax highlight for Yul intermediate code.
